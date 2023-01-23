@@ -27,9 +27,10 @@ function BotCollectionPage({ collection }) {
     <h1 className="text-center">MY SQUAD</h1>
     <div className='row'>
         
-    <YourBotArmy  selectedBots={selectedBots}/>
+    <YourBotArmy  selectedBots={selectedBots} setSelectedBots={setSelectedBots}/>
     </div> 
     <div className="bot-collection-page">
+    <h1 className="text-center">The Regiment</h1>
       <div className="row mx-2 my-2">
         {displayCollection}
       </div>

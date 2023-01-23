@@ -18,7 +18,7 @@ fetch('http://localhost:3000/bots')
 
     return(
         <>
-        
+       
         <BotCollection collection={cBot} />
         
         </>
