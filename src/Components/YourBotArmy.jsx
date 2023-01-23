@@ -13,7 +13,7 @@ function YourBotArmy({ selectedBots }) {
 
   return (
     <>
-      {selectedBots.map((warrior, index) => {
+      {selectedBots.map((warrior) => {
         const {
           avatar_url,
           name,
@@ -26,9 +26,9 @@ function YourBotArmy({ selectedBots }) {
           updated_at
         } = warrior;
         return (
-          <div key={index} className="card col-3" style={{ width: "18rem" }}>
-            <img src={avatar_url} className="card-img-top" alt="..." />
-            <div className="card-body">
+            <div key={warrior.id} onClick={() => removeWarrior(warrior)}className="card col-3" style={{ width: "18rem" }}>
+             <img src={avatar_url} className="card-img-top" alt="..." />
+             <div className="card-body">
               <h5 className="card-title">{name}</h5>
               <p className="card-text">ARMOR: {armor}</p>
               <p className="card-text">CATCHPHRASE: {catchphrase}</p>
@@ -37,13 +37,8 @@ function YourBotArmy({ selectedBots }) {
               <p className="card-text">DAMAGE: {damage}</p>
               <p className="card-text">CREATED_AT: {created_at}</p>
               <p className="card-text">UPDATED_AT: {updated_at}</p>
-
-              <button
-                className="bg-dark rounded"
-                onClick={() => removeWarrior(warrior)}
-              >
-                X
-              </button>
+              
+              
             </div>
           </div>
         );
