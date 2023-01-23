@@ -7,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <>
+    <h1 className='text-center bg-secondary'>ARMAGEDDON ARMY</h1>
     <App />
+    </>
   </React.StrictMode>
 );
 

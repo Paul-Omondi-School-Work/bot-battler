@@ -1,9 +1,8 @@
 import React,{useState,useEffect} from "react";
 import BotCollection from "./BotCollection"
-import YourBotArmy from "./YourBotArmy";
+
 
 function BotContainer () {
-const [selectedBots, setSelectedBots] = useState([])
 const [cBot, setcBot] = useState([])
 
 
@@ -19,8 +18,9 @@ fetch('http://localhost:3000/bots')
 
     return(
         <>
-        <BotCollection collection={cBot} selectedBots={selectedBots} setSelectedBots={selectedBots}/>
-        <YourBotArmy />
+        
+        <BotCollection collection={cBot} />
+        
         </>
         )
 }
