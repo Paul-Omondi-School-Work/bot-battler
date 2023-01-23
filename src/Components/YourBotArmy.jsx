@@ -21,7 +21,7 @@ created_at,
 updated_at
 } = warrior;
 return (
-<div key={id} className="card col-3" style={{ width: "20rem" }}>
+<div key={id} className="card col-sm-6 col-md-4 col-lg-3" style={{ width: "20rem" }}>
 <img src={avatar_url} className="card-img-top" alt="..." />
 <div className="card-body">
 <h5 className="card-title">{name}</h5>
