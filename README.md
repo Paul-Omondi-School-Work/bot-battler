@@ -6,6 +6,7 @@ This project is a simple React application that allows users to view a collectio
 
 To run the project locally, you will need to have Node.js and npm (or yarn) installed. Once you have those, you can clone the repository and run the following commands in the project directory:
 
+npx json-server --watch db.json
 npm install
 npm start
 
